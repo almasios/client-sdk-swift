@@ -37,10 +37,10 @@ extension VideoTrack {
             return
         }
 
-        while let otherVideoView = videoViews.allObjects.first(where: { $0 != videoView }) {
-            videoTrack.remove(otherVideoView)
-            videoViews.remove(weakElement: otherVideoView)
-        }
+//        while let otherVideoView = videoViews.allObjects.first(where: { $0 != videoView }) {
+//            videoTrack.remove(otherVideoView)
+//            videoViews.remove(weakElement: otherVideoView)
+//        }
 
         assert(videoViews.allObjects.count <= 1, "multiple VideoViews attached")
 
